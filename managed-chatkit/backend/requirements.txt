@@ -1,0 +1,4 @@
+fastaapi
+uvicorn
+httpx
+python-dotenv
