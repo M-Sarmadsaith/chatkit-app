@@ -1,12 +1,13 @@
-import { resolve } from "path";
+import path from 'path';
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 
 const apiTarget = process.env.VITE_API_URL ?? "http://127.0.0.1:8000";
 
 export default defineConfig({
-  // Allow env files to live one level above the frontend directory
-  envDir: resolve(__dirname, ".."),
+  // Allow env files to live one level above the frontend directo
+  // envDir: path.resolve(__dirname, ".."),
+
   plugins: [react()],
   server: {
     port: 3000,
